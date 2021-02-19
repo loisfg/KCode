@@ -1,1 +1,2 @@
-![MOnitoramento de mineração de cripto moeda (1)](https://user-images.githubusercontent.com/70453945/108509438-fde3e380-729b-11eb-8756-53fbf9b81f4c.png)
+![MOnitoramento de mineração de cripto moeda (2)](https://user-images.githubusercontent.com/70453945/108509537-1fdd6600-729c-11eb-934b-70dd3bc3762b.png)
+
