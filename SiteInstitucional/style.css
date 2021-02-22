@@ -7,26 +7,32 @@
 }
 
 .page1 {
-    width: 100%;
-    min-height: 669px;
-    max-height: 720px;
-    background: url(/SiteInstitucional/img/1.png);
+  width: 100%;
+  height: 100%;
+  background: url(/SiteInstitucional/img/1.png) center no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+container {
+  width: 80%;
+  height: 100%;
+
 }
 
 header {
-    width: 100%;
-    height: 50px;
-    position: fixed;
+  width: 100%;
+  height: 5vh;
+  position: fixed;
 }
 nav {
-    width: 100%;
-    height: 90px;
-    background-color: #A842C5;
+  width: 100%;
+  height: 10vh;
+  background-color: #a942c542;
 }
 
 .logo{
-    width: 80px;
-    margin: 5px 0 0 15px;
+  width: 8vh;
+  margin: 5px 0 0 15px;
 }
 
 .menu {
@@ -86,3 +92,43 @@ input:checked ~ label .hamburguer:after {
   transform: rotate(90deg);
   bottom: 0;
 }
+
+.logo-centro {
+  width: 25vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+
+footer {
+  width: 100%;
+  height: 11vh;
+  background-color: #A842C5;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.box-footer{
+  width: 30vh;
+  height: 100%;
+  margin-left: 1vh
+}
+
+#contato {
+  font-size: 3vh;
+  margin: 0.9vh;
+}
+
+#email {
+  font-size: 3vh;
+  margin: 0.9vh;
+}
+
+hr {
+  height: 80%;
+  margin-top: 1vh;
+}
+
