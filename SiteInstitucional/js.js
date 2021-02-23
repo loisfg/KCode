@@ -13,7 +13,7 @@ for (let i = 0; i < 30; i++) {
 
     const delay = random(5,0.2);
     const duration = random(24,12);
-    const imagem = `${src="/logo/donatello.png"}`
+    const imagem = `${src="/SiteInstitucional/img/moedacripto.png"}`
 
     img.src = `${imagem}`;
     img.style.width = `${size}px`;

@@ -13,7 +13,7 @@ body {
 .page1 {
   width: 100%;
   height: 100%;
-  background: url(/SiteInstitucional/img/1.png) center no-repeat;
+  background: url(/SiteInstitucional/img/fundo.png) center no-repeat;
   background-size: cover;
   position: fixed;
 }
@@ -33,7 +33,7 @@ header {
 nav {
   width: 100%;
   height: 10vh;
-  background-color: #a942c542;
+  background-color: rgba(104, 104, 206, 0.699);
 }
 
 .logo{
@@ -89,7 +89,7 @@ nav {
 .nav-lista {
   width: 100%;
   height: 10vh;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(104, 104, 206, 0.699);
   position: absolute;
   top: -10vh;
   transition: 1.3s ease-in-out;
@@ -153,7 +153,7 @@ input:checked ~ ul {
   top: 50%;
   left: 50%;
   transform:translate(-50%,-50%);
-  transition: 1s;
+  transition: 2s;
   animation: logo-centro 1s cubic-bezier(0.250,0.460, 0.450,0.940) both;
 }
 
@@ -163,15 +163,7 @@ input:checked ~ ul {
 
 @keyframes logo-centro {
   0% {
-    transform: translateZ(-20%);
-    opacity: 0;
-  }
-  25%{
-    transform: translateZ(-30%);
-    opacity: 0;
-  }
-  50%{
-    transform: translateZ(-40%);
+    transform: translateZ(-1400px);
     opacity: 0;
   }
   100% {
@@ -183,7 +175,7 @@ input:checked ~ ul {
 footer {
   width: 100%;
   height: 11vh;
-  background-color: #a942c59c;
+  background-color: rgba(104, 104, 206, 0.699);
   position: absolute;
   bottom: 0;
   display: flex;
