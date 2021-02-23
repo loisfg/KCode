@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow: hidden;
+}
+
 .page1 {
   width: 100%;
   height: 100%;
@@ -13,16 +17,18 @@
   background-size: cover;
   position: fixed;
 }
-container {
+
+.container {
   width: 80%;
   height: 100%;
-
+  margin: auto;
 }
 
 header {
   width: 100%;
   height: 5vh;
   position: fixed;
+
 }
 nav {
   width: 100%;
@@ -36,23 +42,28 @@ nav {
 }
 
 .menu {
-  background: #fff;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 6vh;
+  height: 6vh;
   position: fixed;
-  top: 15px;
-  right: 25px;
+  top: 1.5vh;
+  right: 2.5vh;
+  cursor:pointer;
+  transition: box-shadow .8s ease-in-out;
+}
+
+.menu:hover {
+  box-shadow: 0 0 0 5px #fff, 0 0 0 5px #fff;
 }
 
 .hamburguer {
   position: relative;
   display: block;
   background: #000;
-  width: 30px;
+  width: 3vh;
   height: 2px;
-  top: 29px;
-  left: 15px;
+  top: 2.9vh;
+  left: 1.5vh;
   transition: 0.5s ease-in-out;
 }
 
@@ -75,6 +86,18 @@ nav {
   bottom: -10px;
 }
 
+.nav-lista {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: -10vh;
+  transition: 1.3s ease-in-out;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 input {
   display: none;
 }
@@ -93,18 +116,74 @@ input:checked ~ label .hamburguer:after {
   bottom: 0;
 }
 
+input:checked ~ label .menu {
+  box-shadow: 0 0 0 20px #fff, 0 0 0 20px #fff;
+  z-index: 1;
+}
+
+input:checked ~ .nav-lista {
+  top: 0;
+}
+
+input:checked ~ ul {
+  opacity: 1;
+}
+
+.nav-lista ul { 
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-lista li {
+  display: inline-block;
+  padding-right: 50px;
+  margin-left: 50px;
+  font-size: 1.5vmax;
+  border-bottom: 1px solid white;
+}
+
+.informacoes:hover {
+  color: #A842C5;
+  border-bottom: #000 1px solid;
+}
+
 .logo-centro {
   width: 25vh;
   position: absolute;
   top: 50%;
   left: 50%;
   transform:translate(-50%,-50%);
+  transition: 1s;
+  animation: logo-centro 1s cubic-bezier(0.250,0.460, 0.450,0.940) both;
+}
+
+.logo-centro:hover {
+  width: 27vh;
+}
+
+@keyframes logo-centro {
+  0% {
+    transform: translateZ(-20%);
+    opacity: 0;
+  }
+  25%{
+    transform: translateZ(-30%);
+    opacity: 0;
+  }
+  50%{
+    transform: translateZ(-40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(-50%);
+    opacity: 1;
+  }
 }
 
 footer {
   width: 100%;
   height: 11vh;
-  background-color: #A842C5;
+  background-color: #a942c59c;
   position: absolute;
   bottom: 0;
   display: flex;
@@ -112,9 +191,9 @@ footer {
 }
 
 .box-footer{
-  width: 30vh;
+  width: 20%;
   height: 100%;
-  margin-left: 1vh
+  margin-left: 1vh;
 }
 
 #contato {
@@ -132,3 +211,33 @@ hr {
   margin-top: 1vh;
 }
 
+
+/* moedas */
+
+.moedas img {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.336);
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  animation: moedasRodando 2s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes moedasRodando{
+  from {
+    transform: translateY(0);
+    opacity: 0;
+    z-index: -1;
+  }
+  50% {
+    z-index: -1;
+    opacity: 1;
+  }
+  to {
+    z-index: -1;
+    transform: translateY(-1100px) rotate(960deg);
+    opacity: 0;
+  }
+}
