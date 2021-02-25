@@ -1,0 +1,9 @@
+Hexadecimais 
+
+Verde super claro - #CEE4D9
+Verde claro -#88A9A7
+Verde - #6E9692
+Cinza - #514E4D
+Rosa - #B73447
+Laranja - #F4BBA8
+Bege - #EDE6DD
