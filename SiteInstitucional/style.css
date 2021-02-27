@@ -13,6 +13,11 @@ body {
   overflow: hidden;
 }
 
+@media only screen and (max-device-width: 1920px) {
+  .menu { width:100%; }
+  }
+  
+
 .page1 {
   width: 100%;
   height: 100%;
@@ -50,6 +55,9 @@ nav {
   cursor:pointer;
 
   transition: box-shadow .8s ease-in-out;
+}
+a {
+  text-decoration: none;
 }
 
 .menu:hover {
@@ -151,6 +159,97 @@ input:checked ~ ul {
   border-bottom: #000 1px solid;
 }
 
+
+
+
+footer {
+  width: 100%;
+  height: 15vh;
+
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: #88A9A7;
+}
+
+.box-footer{
+  width: 25%;
+  height: 100%;
+  margin-left: 1vh;
+  color: #514E4D;
+}
+
+footer span {
+  font-size: 2.7vh;
+}
+
+#contato-empresarial {
+  font-size: 1vw;
+  margin: 0.9vh;
+  text-align: center;
+}
+
+#email-contato {
+  font-size: 2vw;
+  margin: 0.9vh;
+  width: 70vh;
+}
+
+#email-contato .parte-texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.3vw;
+  width: 50%;
+  height: 100%;
+  float: left;
+
+}
+
+#email-contato .parte-inputs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+#email-contato input {
+  width: 80%;
+  height: 20%;
+  padding-left: 1vw;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#email-contato input::placeholder {
+  font-size: 95%;
+  color: rgba(0, 0, 0, 0.692);
+}
+
+#parcerias {
+  display: flex;
+  align-items: center;
+}
+
+#parcerias #imagem-parcerias{
+  width: 20vh;
+}
+
+hr {
+  height: 80%;
+  margin-top: 1vh;
+  background-color: white;
+}
+
+/* PAGINA 1 */
+
 .logo-centro {
   width: 50vh;
 
@@ -163,14 +262,16 @@ input:checked ~ ul {
 }
 
 .fogo-centro {
-  opacity: 0.7;
   width: 4.5vh;
+
   top: 41%;
   right: 41%;
   position: absolute;
+
   transform:translate(-50%,-50%);
   animation: fogo-centro 10s cubic-bezier(0.250,0.460, 0.450,0.940) alternate;
   transform: rotate(100deg);
+  opacity: 0.7;
 }
 
 @keyframes logo-centro {
@@ -199,108 +300,21 @@ input:checked ~ ul {
   }
 }
 
+/* IDES */
 
-footer {
-  width: 100%;
-  height: 15vh;
-
-  bottom: 0;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  background-color: #88A9A7;
-}
-
-.box-footer{
-  width: 25%;
-  height: 100%;
-  margin-left: 1vh;
-  color: #514E4D;
-}
-
-footer span {
-  font-size: 3vh;
-}
-
-#contato-empresarial {
-  font-size: 1vw;
-  margin: 0.9vh;
-  text-align: center;
-}
-
-#email-contato {
-  font-size: 2vw;
-  margin: 0.9vh;
-  width: 70vh;
-}
-
-#email-contato .parte-texto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 1.5vw;
-  width: 50%;
-  height: 100%;
-  float: left;
-
-}
-
-#email-contato .parte-inputs {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  
-  width: 50%;
-  height: 100%;
-  float: left;
-}
-
-#email-contato input {
-  width: 80%;
-  height: 20%;
-  padding-left: 1vw;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid black;
-  border-radius: 3px;
-}
-
-#email-contato input::placeholder {
-  color: rgba(0, 0, 0, 0.692);
-}
-
-
-#parcerias {
-  display: flex;
-  align-items: center;
-}
-
-#parcerias #imagem-parcerias{
-  width: 20vh;
-}
-
-hr {
-  height: 80%;
-  margin-top: 1vh;
-  background-color: white;
-}
-
-
-/* moedas */
-
-.moedas img {
+.IDES img {
   width: 40px;
   height: 40px;
 
   position: absolute;
   bottom: -40px;
   display: block;
-  animation: moedasRodando 2s infinite;
+
+  animation: idesRodando 2s infinite;
   animation-direction: alternate;
 }
 
-@keyframes moedasRodando{
+@keyframes idesRodando{
   from {
     transform: translateY(0);
     opacity: 0;
@@ -314,5 +328,123 @@ hr {
     z-index: -1;
     transform: translateY(-1100px) rotate(960deg);
     opacity: 0;
+  }
+}
+/* PAGINA 2 */
+.container {
+  width: 100vw;
+  height: 100%;
+  margin: auto;
+  background: url(/SiteInstitucional/img/equipe.png) center no-repeat;
+}
+
+.nosso-time {
+  position: relative;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 3em;
+  color: #B73447;
+  opacity: 0;
+  z-index: -1;
+  animation: nosso-timeMove 0s 1.1s both;
+}
+
+.text-nosso-time {
+  overflow: hidden;
+  position: relative;
+}
+
+.text-nosso-time:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #CEE4D9;
+  transform: translateX(-100%);
+  animation: blocoDesaparecer 0.5s 0.6s both, aparecerLetra 0.5s 1.1s both;
+}
+
+.box-all-names {
+  width: 10vw;
+  height:  50vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-all-names li {
+  list-style: none;
+  font-size: 3vh;
+  margin-bottom: 1em;
+}
+
+.box-names {
+  border-right: 2px solid white;
+  height: 33%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: cursorPiscando 1s steps(40) infinite normal,
+  escrevendo 4s steps(40) 1s normal both;
+}
+
+@keyframes escrevendo {
+  from {
+    width: 0;
+  }
+  to {
+    width: 102%;
+  }
+}
+
+@keyframes cursorPiscando{
+  from {
+    border-right-color: rgba(255, 255, 255, 0.753);     
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+#box-names-left{
+  left: 0;
+  position: absolute;
+}
+
+#box-names-right {
+  position: absolute;
+  right: 0;
+}
+
+@keyframes blocoDesaparecer{
+  from {
+    width: 0%;
+  } 
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes aparecerLetra {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes nosso-timeMove {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

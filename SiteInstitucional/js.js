@@ -1,6 +1,6 @@
 // Squares
 
-const ulMoedas = document.querySelector("ul.moedas");
+const ulIDES = document.querySelector("ul.IDES");
 
 
 for (let i = 0; i < 20; i++) {
@@ -17,7 +17,7 @@ for (let i = 0; i < 20; i++) {
     const delay = random(5,0.2);
     const duration = random(24,12);
 
-    const imagem = `${src="../SiteInstitucional/img/android.png"}`
+    const imagem = `${src="../SiteInstitucional/img/netbeans.png"}`
 
     img.src = `${imagem}`;
     img.style.width = `${size}px`;
@@ -32,6 +32,6 @@ for (let i = 0; i < 20; i++) {
     img.style.animationDuration = `${duration}s`;
     img.style.animationTimingFunction = `cubic-bezier(${Math.random(),Math.random(),Math.random(),Math.random()})`
 
-    ulMoedas.appendChild(img);
+    ulIDES.appendChild(img);
 }
 
