@@ -166,8 +166,14 @@ input:checked ~ ul {
   animation: logo-centro 1s cubic-bezier(0.250,0.460, 0.450,0.940) both;
 }
 
-.logo-centro:hover {
-  width: 27vh;
+.fogo-centro {
+  opacity: 0.7;
+  width: 4vw;
+  top: 35%;
+  right: 37%;
+  position: absolute;
+  transform:translate(-50%,-50%);
+  transform: rotate(100deg);
 }
 
 @keyframes logo-centro {
@@ -259,7 +265,6 @@ hr {
   position: absolute;
   bottom: -40px;
   display: block;
-  background-color: rgba(0, 0, 0, 0.336);
   animation: moedasRodando 2s infinite;
   animation-direction: alternate;
 }

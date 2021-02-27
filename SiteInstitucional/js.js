@@ -2,18 +2,22 @@
 
 const ulMoedas = document.querySelector("ul.moedas");
 
-for (let i = 0; i < 30; i++) {
+
+for (let i = 0; i < 20; i++) {
     const img = document.createElement("img");
-    
+
     const random = (min,max) => Math.random() * (max - min) + min;
     
     const size = Math.floor(random(10, 120));
+
+    const randomTrunc = Math.floor(random(1,2));
 
     const position = random(1,95);
 
     const delay = random(5,0.2);
     const duration = random(24,12);
-    const imagem = `${src="../SiteInstitucional/img/moedacripto.png"}`
+
+    const imagem = `${src="../SiteInstitucional/img/android.png"}`
 
     img.src = `${imagem}`;
     img.style.width = `${size}px`;
