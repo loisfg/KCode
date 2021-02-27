@@ -17,15 +17,10 @@ body {
   width: 100%;
   height: 100%;
 
+  min-width: 520px;
+  min-height: auto;
   position: fixed;
   background-color: #CEE4D9;
-}
-
-.container {
-  width: 80%;
-  height: 100%;
-  
-  margin: auto;
 }
 
 header {
@@ -106,7 +101,7 @@ nav {
   align-items: center;
 }
 
-input {
+#menu-hamburguer{
   display: none;
 }
 
@@ -142,16 +137,17 @@ input:checked ~ ul {
   text-decoration: none;
 }
 
-.nav-lista li {
+.informacoes {
   display: inline-block;
   padding-right: 50px;
   margin-left: 50px;
   font-size: 1.5vmax;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid transparent;
+  color: #514E4D;
 }
 
 .informacoes:hover {
-  color: #A842C5;
+  color: #ffffff;
   border-bottom: #000 1px solid;
 }
 
@@ -168,11 +164,12 @@ input:checked ~ ul {
 
 .fogo-centro {
   opacity: 0.7;
-  width: 4vw;
-  top: 35%;
-  right: 37%;
+  width: 4.5vh;
+  top: 41%;
+  right: 41%;
   position: absolute;
   transform:translate(-50%,-50%);
+  animation: fogo-centro 10s cubic-bezier(0.250,0.460, 0.450,0.940) alternate;
   transform: rotate(100deg);
 }
 
@@ -186,6 +183,22 @@ input:checked ~ ul {
     opacity: 1;
   }
 }
+
+@keyframes fogo-centro {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 footer {
   width: 100%;
@@ -207,17 +220,16 @@ footer {
 
 footer span {
   font-size: 3vh;
-  margin-left: -3vh;
 }
 
 #contato-empresarial {
-  font-size: 2vh;
+  font-size: 1vw;
   margin: 0.9vh;
+  text-align: center;
 }
 
 #email-contato {
-
-  font-size: 2vh;
+  font-size: 2vw;
   margin: 0.9vh;
   width: 70vh;
 }
@@ -227,7 +239,7 @@ footer span {
   justify-content: center;
   align-items: center;
 
-  font-size: 2.5vh;
+  font-size: 1.5vw;
   width: 50%;
   height: 100%;
   float: left;
@@ -235,10 +247,29 @@ footer span {
 }
 
 #email-contato .parte-inputs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  
   width: 50%;
   height: 100%;
   float: left;
 }
+
+#email-contato input {
+  width: 80%;
+  height: 20%;
+  padding-left: 1vw;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#email-contato input::placeholder {
+  color: rgba(0, 0, 0, 0.692);
+}
+
 
 #parcerias {
   display: flex;
