@@ -1,2 +1,2 @@
 
-![monitoramento de plataforma de desenvolvimento (2)](https://user-images.githubusercontent.com/70453945/109570209-73378b80-7ac8-11eb-82aa-243f6d568a3c.gif)
+![monitoramento de plataforma de desenvolvimento (3)](https://user-images.githubusercontent.com/70453945/109570495-dde8c700-7ac8-11eb-8d78-9a2e0ea66907.gif)
