@@ -640,4 +640,12 @@ hr {
   width: 28%;
   height: 80%;
   border: 1px solid grey;
+  display: flex;
+}
+
+.box-our-solution img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
