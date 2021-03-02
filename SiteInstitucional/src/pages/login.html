@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login</title>
+</head>
+
+<!--https://www.canva.com/design/DAEXKmVA0EQ/p7al5mMUCIMy17BMrmLBlA/view?utm_content=DAEXKmVA0EQ&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton#8-->
+
+<body>
+
+    <header>
+        <input id="menu-hamburguer" type="checkbox" />
+        <label for="menu-hamburguer">
+            <div class="menu">
+                <span class="hamburguer"></span>
+            </div>
+        </label>
+        <div class="nav-lista">
+            <ul>
+                <a href="../index.html">
+                    <li class="informacoes">Home</li>
+                </a>
+                <a href="about-us.html">
+                    <li class="informacoes">Quem somos</li>
+                </a>
+                <a href="">
+                    <li class="informacoes">Descobrir</li>
+                </a>
+                <a href="">
+                    <li class="informacoes">Nossa solução</li>
+                </a>
+                <a href="">
+                    <li class="informacoes">Contato</li>
+                </a>
+            </ul>
+        </div>
+        <nav>
+            <img src="../img/logo.png" alt="Logo" class="logo">
+        </nav>
+    </header>
+
+    <div class="box_login">
+        <img src="../img/logo.png" alt="logo" id="img_login">
+        <span>FAZER LOGIN</span>
+        <div class="div_itens">
+            <input class="inp_login" type="text" placeholder="Email">
+            <input class="inp_login" type="password" placeholder="Senha">
+            <!--<span>Novo por aqui</span>-->
+        </div>
+        <button id="btn_login" onclick="entrar()">Proximo</button>
+    </div>
+
+    <section>
+    </section>
+    <footer>
+        <div class="box-footer" id="contato-empresarial">
+            <span><b>Contato</b></span> <br>
+            Rua Joaquim Floriano, 940 cj 21 <br>
+            São Paulo - SP - CEP 04534004 <br>
+            (11) 4118-3148 / 4118-3146 <br>
+            contato@empresa.com.br <br>
+        </div>
+        <hr>
+        <div class="box-footer" id="email-contato">
+            <div class="parte-texto">
+                <b>Mande seu e-mail e <br>
+                    entraremos em contato</b>
+            </div>
+            <div class="parte-inputs">
+                <input type="text" placeholder="NOME">
+                <input type="email" placeholder="E-MAIL">
+            </div>
+        </div>
+        <hr>
+        <div class="box-footer" id="parcerias">
+            <img src="../img/logo.png" alt="logo-empresa" id="imagem-parcerias">
+            <img src="../img/logo-fundo-bandtec.png" alt="logo-bandtec" id="imagem-parcerias">
+        </div>
+    </footer>
+    <ul class="IDES">
+    </ul>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
