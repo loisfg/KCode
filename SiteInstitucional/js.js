@@ -17,7 +17,7 @@ for (let i = 0; i < 20; i++) {
     const delay = random(5,0.2);
     const duration = random(24,12);
 
-    const imagem = `${src="../SiteInstitucional/img/netbeans.png"}`
+    const imagem = `${src="./img/netbeans.png"}`
 
     img.src = `${imagem}`;
     img.style.width = `${size}px`;
@@ -35,3 +35,23 @@ for (let i = 0; i < 20; i++) {
     ulIDES.appendChild(img);
 }
 
+/*MODAL*/
+
+function openModal(mn) {
+    let modal = document.getElementById(mn);
+    if (typeof modal == 'undefined' || modal === null)
+        return;
+
+    modal.style.display = 'Block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(mn) {
+    let modal = document.getElementById(mn);
+
+    if (typeof modal == 'undefined' || modal === null)
+        return;
+
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
