@@ -460,22 +460,22 @@ hr {
 }
 
 .btn {
-  background-color: rgb(33, 156, 70);
+  background-color: #F28F69;
   padding: 5px 10px 5px 10px;
-  border: 2px solid rgb(4, 92, 30);
   cursor: pointer;
   transition: background .3s;
   border-radius: 5px;
-  color: #FFF;
+  color: #B73447;
 }
 
 .btn:hover {
-  background-color: rgb(4, 92, 30);
+  background-color: #B73447;
+  color: #F28F69;
 }
 
 .btn:active {
-  background-color: rgb(129, 255, 166);
-  color: rgb(4, 92, 30);
+  background-color: #B73447;
+  color: #F28F69;
 }
 
 .modal {
@@ -512,4 +512,111 @@ hr {
 
 .modal-footer{
   background-color: #88A9A7;
+}
+
+/* CARDS */
+
+.content-findout {
+  margin: auto;
+  width: 80%;
+  height: calc(100% - 10vh);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} 
+.box-cards {
+  width: 25%;
+  height: 50%;
+  border-radius: 20px;
+  background-color: #8FAFAD;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.452) 20px 20px 20px 20px;
+}
+
+
+/* virar o painel ao passar o mouse */
+
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+    width: 100%;
+    height: 100%;
+}
+
+/* velocidade da virada aqui */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/*escondendo painel durante a troca */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.top-card{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #B73447;
+  font-size: 3vh;
+}
+
+.mid-card {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mid-card img {
+  width: 60vh;
+}
+
+.mid-card-back {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mid-card-back ul {
+  margin-left: 1vh;
+}
+
+.mid-card-back li {
+  margin-bottom: 2vh;
+  font-size: 1.8vh;
+}
+
+.bottom-card {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1vh;
+}
+
+
+
+
+/* painel frontal colocado acima das costas*/
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+/* painel trazeiro iniciando oculto */
+.back {
+	transform: rotateY(180deg);
 }
