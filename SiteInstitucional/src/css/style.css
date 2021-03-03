@@ -515,6 +515,11 @@ hr {
   background-color: #88A9A7;
 }
 
+#imagem-modal {
+  width: 60%;
+  float: left;
+}
+
 /* CARDS PAG 3- findout*/
 
 .content-limitacao {

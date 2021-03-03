@@ -52,7 +52,7 @@
             <section class="box-all-names" id="box-names-left">
                 <ul>
 
-                    <li class="box-names" onclick="openModal('dv-modal')"> BRUNO</li>
+                    <li class="box-names" onclick="openModal('dv-modal')" id="bruno"> BRUNO</li>
                     <li class="box-names" onclick="openModal('dv-modal')"> MATHIAS </li>
                     <li class="box-names" onclick="openModal('dv-modal')"> MATHEUS </li>
                 </ul>
@@ -100,10 +100,8 @@
             <div class="modal-header">
                 <h1 id="name_team">NOME</h1>
             </div>
-
-            <div class="modal-body">
-                <img src="https://satellasoft.com/img/artigos/2020/08/260/steam-store.JPG" alt="The Witcher"
-                    style="width: 60%; float: left;">
+            <div class="modal-body" id="modalcomplet">
+                <img src="/src/img/luis.jpg" alt="Membro imagem" id="imagem-modal">
 
                 <p>Integer in augue felis. Quisque bibendum luctus sapien in egestas. Proin ullamcorper tempus eleifend.
                     Sed at sollicitudin libero. Maecenas sodales condimentum sapien vel mattis. Nam lacinia risus vel
@@ -118,7 +116,6 @@
             </div>
         </div>
     </div>
-
     <script src="../js/js.js"></script>
 </body>
 
