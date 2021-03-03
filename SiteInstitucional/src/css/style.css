@@ -587,7 +587,7 @@ hr {
 
 .mid-card-back {
   width: 100%;
-  height: 25vh;
+  height: 28vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -598,8 +598,8 @@ hr {
 }
 
 .mid-card-back li {
-  margin-bottom: 2vh;
-  font-size: 1.8vh;
+  margin-left: 2vh;
+  font-size: 2vh;
 }
 
 .bottom-card {
