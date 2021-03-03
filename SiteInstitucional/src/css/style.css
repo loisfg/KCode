@@ -18,7 +18,7 @@ body {
   }
   
 
-.page1 {
+.page {
   width: 100%;
   height: 100%;
 
@@ -331,17 +331,18 @@ hr {
   }
 }
 /* PAGINA 2 */
-.container {
+
+.fundoAboutUS {
   width: 100vw;
   height: 100%;
   margin: auto;
-  background: url(/img/equipe.png) center no-repeat;
+  background: url(./img/equipe.png) center no-repeat;
 }
 
-.nosso-time {
+.alinhando-texto{
   position: relative;
   width: 100%;
-  height: 25%;
+  height: 20%;  
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -352,12 +353,12 @@ hr {
   animation: nosso-timeMove 0s 1.1s both;
 }
 
-.text-nosso-time {
+.text-alinhado {
   overflow: hidden;
   position: relative;
 }
 
-.text-nosso-time:after {
+.text-alinhado:after {
   content: "";
   position: absolute;
   top: 0;
@@ -514,9 +515,9 @@ hr {
   background-color: #88A9A7;
 }
 
-/* CARDS */
+/* CARDS PAG 3- findout*/
 
-.content-findout {
+.content-limitacao {
   margin: auto;
   width: 80%;
   height: calc(100% - 10vh);
@@ -607,9 +608,6 @@ hr {
   margin-right: 1vh;
 }
 
-
-
-
 /* painel frontal colocado acima das costas*/
 .front {
 	z-index: 2;
@@ -619,4 +617,35 @@ hr {
 /* painel trazeiro iniciando oculto */
 .back {
 	transform: rotateY(180deg);
+}
+
+/* PAGINA 4 our-solution */
+
+.container {
+  width: 80%;
+  height: 60%;
+  margin: auto;
+}
+
+.container-separation {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.box-our-solution {
+  width: 28%;
+  height: 80%;
+  border: 1px solid grey;
+  display: flex;
+}
+
+.box-our-solution img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
