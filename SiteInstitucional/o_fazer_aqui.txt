@@ -1,0 +1,9 @@
+﻿1. criar usurio com as pre sets ja feitos.
+
+2. forçar a criação de tabela, descomentando a linha (comentario.js) {
+    git bash precisa ver feito dentro da pasta models
+}
+
+3.sair da pasta models e da um (nodemon app.js)
+
+4. localhost:8080/

@@ -1,0 +1,41 @@
+﻿Acessar Mysql com Pront de comando:
+mysql -h 'servidor' -u 'usuario'-p
+mysql -h localhost -u root -p
+
+
+Criar usuario:
+CREATE USER 'nome_usuario'@'localhost' IDENTIFIED WITH mysql_native_password BY 'senha';
+
+Liberar permissão para acessaro data base:
+GRANT ALL aPRIVILEGES ON * . * TO 'node_usuario'@localhost';
+
+Uma vez finalizados as permissões que voce quer definir para os seus novos usuarios, certifique-se sempre de recarregar todos os privilegios.
+FLUSH PRIVILEGES;
+
+Como fazer uma query com o modulo do node mysql:
+
+Primeiro conectar:
+var connection = mysql.createConnection({
+    host : 'localhost',
+    user: 'mathias',
+    password: '123456',
+    database: 'api_mk2'
+});
+
+
+connection.connect(function(err){
+  if (err) {
+    console.error('Erro ao realizar a conexao com BD:'
+    + err.stack); return;
+  }
+});
+
+Segundo: a linha de comando para o mysql
+
+connection.query("UPDATE users SET nome = 'Mathias' WHERE id = 1", function(err, result){
+  if (!err) {
+    console.log('Usuario editado com sucesso!')
+  }else{
+    console.log('Erro: o usuario nao foi editado com sucesso ');
+  }
+});
