@@ -641,13 +641,22 @@ hr {
   height: 80%;
   border: 1px solid grey;
   display: flex;
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.555);
 }
 
-.box-our-solution img {
+.card img {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+}
+.card-back {
+  font-size: 2.5;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 /* Login */
