@@ -41,7 +41,7 @@
                     </ul>
                 </div>
                 <nav>
-                    <img src="../img/logo.png" alt="Logo" class="logo">
+                    <img src="/img/logo-escrito.png" alt="Logo" class="logo">
                 </nav>
             </header>
             <section class="alinhando-texto">
@@ -52,16 +52,16 @@
             <section class="box-all-names" id="box-names-left">
                 <ul>
 
-                    <li class="box-names" onclick="openModal('dv-modal')" id="bruno"> BRUNO</li>
-                    <li class="box-names" onclick="openModal('dv-modal')"> MATHIAS </li>
-                    <li class="box-names" onclick="openModal('dv-modal')"> MATHEUS </li>
+                    <li class="box-names" onclick="openModal('dv-modal1')"> BRUNO</li>
+                    <li class="box-names" onclick="openModal('dv-modal2')"> MATHIAS </li>
+                    <li class="box-names" onclick="openModal('dv-modal3')"> MATHEUS </li>
                 </ul>
             </section>
             <section class="box-all-names" id="box-names-right">
                 <ul>
-                    <li class="box-names" onclick="openModal('dv-modal')"> SAMUEL </li>
-                    <li class="box-names" onclick="openModal('dv-modal')"> LUIS </li>
-                    <li class="box-names" onclick="openModal('dv-modal')"> ISABELLA </li>
+                    <li class="box-names" onclick="openModal('dv-modal4')"> SAMUEL </li>
+                    <li class="box-names" onclick="openModal('dv-modal5')"> LUIS </li>
+                    <li class="box-names" onclick="openModal('dv-modal6')"> ISABELLA </li>
                 </ul>
             </section>
             <footer>
@@ -95,27 +95,142 @@
     <!-- MODAL -->
 
 
-    <div id="dv-modal" class="modal">
+    <div id="dv-modal1" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 id="name_team">NOME</h1>
+                <h1>KCODE APRESENTA:</h1>
             </div>
             <div class="modal-body">
-                <img src="/src/img/luis.jpg" alt="Membro imagem" id="imagem-modal">
+                <img src="/img/bruno.jpeg" alt="Membro imagem" id="imagem-modal"
+                    style="width: 29%; float: left; margin: 2%;">
 
-                <p>Integer in augue felis. Quisque bibendum luctus sapien in egestas. Proin ullamcorper tempus eleifend.
-                    Sed at sollicitudin libero. Maecenas sodales condimentum sapien vel mattis. Nam lacinia risus vel
-                    nisl venenatis rhoncus. Duis sit amet massa maximus, mollis mi ac, pellentesque purus. Orci varius
-                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc dictum neque
-                    faucibus fringilla pellentesque. Phasellus malesuada aliquet augue. Mauris at eleifend risus, sit
-                    amet scelerisque augue.</p>
+                <h2 id="name_team">BRUNO RICARDO</h2>
+                <p>22 ANOS</p>
+                <p>ESTAGIARIO DE INFRAESTRUTURA</p>
+                <p>ACCENTURE</p>
+                <p>"Estou mais preparado do que antes, acho que esse novo projeto vai me dar oportunidades para me
+                    aprimorar ainda mais, e com o apoio das pessoas a minha volta, vou poder avançar ao final dessa
+                    jornada muito mais preparado."
+                </p>
             </div>
-
             <div class="modal-footer">
-                <button class="btn" onclick="closeModal('dv-modal')">Fechar</button>
+                <button class="btn" onclick="closeModal('dv-modal1')">Fechar</button>
             </div>
         </div>
     </div>
+
+    <div id="dv-modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>KCODE APRESENTA:</h1>
+            </div>
+            <div class="modal-body">
+                <img src="/img/mathias.jpeg" alt="Membro imagem" id="imagem-modal"
+                    style="width: 25%; float: left; margin: 2%;">
+
+                <h2 id="name_team">MATHIAS DE SOUZAS</h2>
+                <p>19 ANOS</p>
+                <p>ESTAGIARIO DE CYBER SECURITY</p>
+                <p>ACCENTURE</p>
+                <p>"Com essa nova fase espero me aprofundar mais em linguagens de mais baixo nível, e creio que esse
+                    será o melhor início para mim"</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal('dv-modal2')">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="dv-modal3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>KCODE APRESENTA:</h1>
+            </div>
+            <div class="modal-body">
+                <img src="/img/matheus.jpeg" alt="Membro imagem" id="imagem-modal"
+                    style="width: 25%; float: left; margin: 2%;">
+
+                <h2 id="name_team">MATHEUS PINHEIRO</h2>
+                <p>19 ANOS</p>
+                <p>ESTAGIARIO DE DEV MOBILE</p>
+                <p>VALEMOBI</p>
+                <p>"Minha expectativa para esse projeto está muito alta, estou feliz por estar nesse grupo e acredito
+                    que este projeto me possibilitará diversos aprendizados, tanto pessoal como profissional."</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal('dv-modal3')">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="dv-modal4" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>KCODE APRESENTA:</h1>
+            </div>
+            <div class="modal-body">
+                <img src="/img/samuel.jpeg" alt="Membro imagem" id="imagem-modal"
+                    style="width: 23%; float: left; margin: 2%;">
+
+                <h2 id="name_team">SAMUEL LOPES</h2>
+                <p>20 ANOS</p>
+                <p>ESTAGIARIO DE DEVOPS</p>
+                <p>VALEMOBI</p>
+                <p>"Minha esperança com relação ao projeto é grande, poder aprender e desenvolver novas tecnologias que
+                    ainda não tenho domínio, me expondo a um ambiente novo onde terei que me desenvolver não só
+                    tecnicamente mas condicionar a mente para novos aprendizados."</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal('dv-modal4')">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="dv-modal5" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>KCODE APRESENTA:</h1>
+            </div>
+            <div class="modal-body">
+                <img src="/img/luis.jpg" alt="Membro imagem" id="imagem-modal"
+                    style="width: 35%; float: left; margin: 2%;">
+
+                <h2 id="name_team">LUIS FERNANDO ROCHA</h2>
+                <p>22 ANOS</p>
+                <p>ESTAGIARIO DE DEV WEB</p>
+                <p>VALEMOBI</p>
+                <p>"Tenho mais uma oportunidade para mostrar tudo que sou capaz nesse projeto, darei meu melhor
+                    para agregar valores ao meu time a essa empresa. Espero sempre o melhor para com pessoas
+                    tão bem decididas!"
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal('dv-modal5')">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="dv-modal6" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>KCODE APRESENTA:</h1>
+            </div>
+            <div class="modal-body">
+                <img src="/img/isa.jpg" alt="Membro imagem" id="imagem-modal"
+                    style="width: 22%; float: left; margin: 2%;">
+                <h2 id="name_team">ISABELLA PIRES</h2>
+                <p>18 ANOS</p>
+                <p>ESTAGIARIA DE NEGÓCIOS</p>
+                <p>VALEMOBI</p>
+                <p>"Esse projeto será um grande deafio profissional e pessoal, mas confio na meu time e orientação dos
+                    professores para uma realização de sucesso"</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal('dv-modal6')">Fechar</button>
+            </div>
+        </div>
+    </div>
+
     <script src="../js/js.js"></script>
 </body>
 
