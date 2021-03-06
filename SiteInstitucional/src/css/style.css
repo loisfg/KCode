@@ -154,13 +154,11 @@ input:checked ~ ul {
   padding-right: 50px;
   margin-left: 50px;
   font-size: 1.5vmax;
-  border-bottom: 1px solid transparent;
   color: #514E4D;
 }
 
 .informacoes:hover {
   color: #ffffff;
-  border-bottom: #000 1px solid;
 }
 
 footer {
