@@ -39,11 +39,16 @@ nav {
   height: 10vh;
 }
 
-.logo{
-  position: relative;
-  width: 40vh;
-  margin: -5vh 0 0 -2.5vw;
-  z-index: 999;
+.logo-text {
+  width: 20%;
+  height: 80%;
+  font-size: 5vh;
+  margin: 2vh 0 0 5vw;
+  color: #B73447;
+  -webkit-text-stroke-width: 1px;  /* largura da borda */
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.198); /* cor da borda */
+    text-shadow: rgba(0, 0, 0, 0.637) -4px 3px 6px;
+  position: absolute;
 }
 
 .menu {
@@ -72,7 +77,6 @@ a {
   height: 2px;
   top: 2.9vh;
   left: 1.5vh;
-  z-index: 1;
 
   display: block;
   position: relative;
@@ -204,7 +208,6 @@ footer span {
   width: 50%;
   height: 100%;
   float: left;
-
 }
 
 #email-contato .parte-inputs {
