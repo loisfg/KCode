@@ -17,9 +17,7 @@ for (let i = 0; i < 20; i++) {
     const delay = random(5,0.2);
     const duration = random(24,12);
 
-    const imagem = `${src="../img/netbeans.png"}`
-
-    img.src = `${imagem}`;
+    img.src = `./img/netbeans.png}`;
     img.style.width = `${size}px`;
     img.style.height = `${size}px`;
     img.style.bottom = `-${size}px`
